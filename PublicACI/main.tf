@@ -1,6 +1,9 @@
 resource "azurerm_resource_group" "rgAci" {
   name     = "rg-aci-euw"
   location = "West Europe"
+  tags = {
+    persistent = "no"
+  }
 
 }
 
