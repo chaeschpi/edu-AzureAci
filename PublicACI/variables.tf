@@ -1,15 +1,21 @@
-variable "acrName" {
+variable "rg-name" {
   type = string
-  default = "acrdemoeuw9986"
-}
-variable "acrId" {
-    type = string
-    default = "/subscriptions/beb82784-53ff-46c5-bd24-e96118a63038/resourceGroups/rg-acr-euw/providers/Microsoft.ContainerRegistry/registries/acrdemoeuw9986"
-  
+  default = "rg-demo-aci"
 }
 
-variable "acrRgName" {
-  
-  type = string
-  default = "rg-acr-euw"
+variable "location" {
+  type = string 
+  default = "West Europe"
+}
+variable "aci-name" {
+  type = sting
+  default = "aci-demowebsite-Public"
+}
+variable "image" {
+  type = string 
+  default = "acrdemoeuw9986.azurecr.io/demowebsite:latest"
+}
+variable "container-name" {
+  type =  string 
+  default = "demo-web-site"
 }
