@@ -8,7 +8,7 @@ variable "location" {
   default = "West Europe"
 }
 variable "aci-name" {
-  type = sting
+  type = string
   default = "aci-demowebsite-Public"
 }
 variable "image" {
